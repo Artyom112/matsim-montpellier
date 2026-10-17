@@ -18,6 +18,7 @@ hs_err_pid*
 
 /target/
 /output/
+/output_*/
 /test/output/
 /bin/
 
@@ -25,4 +26,13 @@ hs_err_pid*
 /.idea/
 *.iml
 
+# macOS
+.DS_Store
+
 dependency-reduced-pom.xml
+
+# Python (matsim_analysis)
+*.egg-info/
+__pycache__/
+.pytest_cache/
+*.pyc

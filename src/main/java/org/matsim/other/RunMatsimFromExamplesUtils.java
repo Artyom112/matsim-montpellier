@@ -14,10 +14,11 @@ class RunMatsimFromExamplesUtils{
 
 	public static void main( String[] args ){
 
-		URL context = org.matsim.examples.ExamplesUtils.getTestScenarioURL( "equil" );
-		URL url = IOUtils.extendUrl( context, "config.xml" );
-
-		Config config = ConfigUtils.loadConfig( url );
+//		URL context = org.matsim.examples.ExamplesUtils.getTestScenarioURL( "equil" );
+//		URL url = IOUtils.extendUrl( context, "config.xml" );
+//
+//		Config config = ConfigUtils.loadConfig( url );
+		Config config = ConfigUtils.loadConfig( "scenarios/equil/config-stochastic.xml" );
 		config.controller().setOverwriteFileSetting( OverwriteFileSetting.deleteDirectoryIfExists );
 
 		// ---

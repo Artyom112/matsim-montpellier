@@ -1,0 +1,4 @@
+person;trip_number;trav_time;traveled_distance;main_mode
+1;1;00:10:00;2000;car
+2;1;00:05:00;1000;walk
+3;1;00:15:00;3000;car

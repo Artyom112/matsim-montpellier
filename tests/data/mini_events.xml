@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events version="1.0">
+<event time="28800.0" type="entered link" link="1" vehicle="v1" />
+<event time="36000.0" type="entered link" link="1" vehicle="v1" />
+<event time="72000.0" type="entered link" link="1" vehicle="v2" />
+<event time="61200.0" type="entered link" link="2" vehicle="v3" />
+</events>

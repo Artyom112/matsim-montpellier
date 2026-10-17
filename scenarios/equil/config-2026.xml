@@ -16,7 +16,7 @@
 	</module>
 
 	<module name="controller">
-		<param name="outputDirectory" value="./output" />
+		<param name="outputDirectory" value="./output_stochastic/output_10" />
 		<param name="lastIteration" value="10" />
 	</module>
 

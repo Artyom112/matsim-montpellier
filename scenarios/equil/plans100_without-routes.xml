@@ -123,6 +123,7 @@
 		<act type="h" x="-25000" y="0" link="1" />
 	</plan>
 </person>
+
 <person id="11">
 	<plan>
 		<act type="h" x="-25000" y="0" link="1" end_time="06:00" />
