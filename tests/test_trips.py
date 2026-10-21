@@ -4,6 +4,25 @@ from matsim_analysis.trips import load_trips, modal_split, trip_stats
 
 DATA = Path(__file__).parent / "data"
 
+# Как и в test_links.py: тесты на фикстуре trips_path проверяют свойства и
+# переключаются на другой файл флагом --trips-path без правки кода; тесты на
+# DATA / "mini_trips.csv" напрямую проверяют конкретные зашитые числа и всегда
+# работают только на этом руками сделанном файле.
+
+
+def test_modal_split_shares_sum_to_one(trips_path):
+    trips = load_trips(trips_path)
+    share = modal_split(trips)
+    assert abs(share.sum() - 1.0) < 1e-9
+
+
+def test_trip_stats_non_negative(trips_path):
+    trips = load_trips(trips_path)
+    stats = trip_stats(trips)
+    assert (stats["n_trips"] > 0).all()
+    assert (stats["mean_dist_km"] >= 0).all()
+    assert (stats["mean_dur_min"] >= 0).all()
+
 
 def test_load_trips_reads_zst():
     trips = load_trips(DATA / "mini_trips.csv.zst")

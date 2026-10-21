@@ -3,7 +3,7 @@
 <config>
 
 	<module name="global">
-		<param name="randomSeed" value="0005" />
+		<param name="randomSeed" value="0002" />
 		<param name="coordinateSystem" value="Atlantis" />
 	</module>
 
@@ -16,7 +16,7 @@
 	</module>
 
 	<module name="controller">
-		<param name="outputDirectory" value="./output_stochastic/output_0005" />
+		<param name="outputDirectory" value="./output_stochastic/output_0002" />
 		<param name="lastIteration" value="50" />
 	</module>
 

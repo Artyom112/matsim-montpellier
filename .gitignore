@@ -21,6 +21,9 @@ hs_err_pid*
 /output_*/
 /test/output/
 /bin/
+/osm/
+*.osm.pbf
+*.osm
 
 # IntelliJ
 /.idea/
